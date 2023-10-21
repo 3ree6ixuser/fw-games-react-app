@@ -1,25 +1,18 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-
-// Profile
+import Event from "pages/Event";
 import UserProfile from "../pages/Authentication/user-profile";
-
-// Authentication related pages
 import Login from "../pages/Authentication/Login";
 import Logout from "../pages/Authentication/Logout";
 import Register from "../pages/Authentication/Register";
 import ForgetPwd from "../pages/Authentication/ForgetPassword";
-
-// Dashboard
 import Dashboard from "../pages/Dashboard/index";
 
 const authProtectedRoutes = [
   { path: "/dashboard", component: <Dashboard /> },
   // //profile
   { path: "/profile", component: <UserProfile /> },
-
-  // this route should be at the end of all other routes
-  // eslint-disable-next-line react/display-name
+  { path: "/event", component: <Event /> },
   {
     path: "/",
     exact: true,

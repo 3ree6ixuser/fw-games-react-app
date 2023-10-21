@@ -175,6 +175,20 @@ const SidebarContent = props => {
             <li className="menu-title">{props.t("Apps")}</li>
 
             <li>
+              <Link to="/event" >
+                <i className="bx bxs-calendar-event"></i>
+                <span>{props.t("Event")}</span>
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/shortcut-hub" >
+                <i className="bx bxs-component "></i>
+                <span>{props.t("Shortcut Hub")}</span>
+              </Link>
+            </li>
+
+            <li>
               <Link to="#" >
                 <i className="bx bx-calendar"></i>
                 <span>{props.t("Calendar")}</span>
